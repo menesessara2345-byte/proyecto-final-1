@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registro — Sabores Autenticos,Momentos Inolvidables</title>
+  <link rel="stylesheet" href="css/register.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="logo">Sabores Autenticos,Momentos Inolvidables</h1>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="menu.html">Menú</a>
+      <a href="reservas.html">Reservas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Crea tu cuenta</h2>
+
+    <form id="registerForm" class="register-form" autocomplete="off" novalidate>
+      <label>
+        Nombre completo
+        <input type="text" id="name" name="name" required />
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="email" name="email" required />
+      </label>
+
+      <label>
+        Contraseña
+        <input type="password" id="password" name="password" minlength="8" required />
+      </label>
+
+      <label>
+        Confirmar contraseña
+        <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required />
+      </label>
+
+      <div class="form-row">
+        <button type="submit" class="btn">Registrar</button>
+        <a href="index.html" class="btn-secondary">Cancelar</a>
+      </div>
+
+      <div id="message" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Sabores Autenticos,Momentos Inolvidables</p>
+  </footer>
+
+  <script src="js/register.js" defer></script>
+</body>
+</html>
