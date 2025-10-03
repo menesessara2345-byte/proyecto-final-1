@@ -1,38 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sabores Autenticos,Momentos Inolvidables — Nosotros</title>
-  <link rel="stylesheet" href="css/nosotros.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fff;
+    }
+
+    /* Encabezado */
+    header {
+      background-color: #7a5c5c;
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    header h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 48px;
+      color: white;
+      margin: 0;
+    }
+
+    /* Sección Nosotros */
+    .nosotros {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      gap: 30px;
+      text-align: center;
+    }
+
+    .nosotros img {
+      width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .nosotros p {
+      max-width: 500px;
+      font-size: 20px;
+      font-family: 'Brush Script MT', cursive;
+      line-height: 1.8;
+      color: #000;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .nosotros {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="logo">Sabores del Valle</h1>
-    <nav class="main-nav">
-      <a href="index.html">Inicio</a>
-      <a href="menu.html">Menú</a>
-      <a href="reservas.html">Reservas</a>
-      <a href="nosotros.html" class="active">Nosotros</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>nosotros</h1>
   </header>
 
-  <main class="container">
-    <h2>Sobre Nosotros</h2>
-    <p>En <strong>Sabores Autenticos,Momentos Inolvidables</strong> creemos que la comida es más que un plato en la mesa, es una experiencia que une a las personas.</p>
+  <!-- Sección Nosotros -->
+  <section class="nosotros">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx-IBvcjth4HtwzYtmoNLYqy6xVIrl7PyADg&s" alt="Restaurante en remodelación">
+    
+    <p>
+      “ Sabores Auténticos nació con el sueño de ofrecer comida que no solo alimente sino que haga vivir momentos inolvidables, cada receta mantiene la esencia de la cocina tradicional con ingredientes frescos y un toque único, convirtiendo al restaurante en un lugar donde los sabores auténticos crean recuerdos que perduran. ”
+    </p>
+    
+    <img src="https://aprende.com/wp-content/uploads/2021/12/clases-online-de-chef.jpg" alt="Platos de comida">
+  </section>
 
-    <section class="about">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEElt2-4VLyq7tQipbd0pYI2HRAq58e4vMcw&s" width="300" height="200">
-        <h3>Nuestra Historia</h3>
-        <p>“Sabores Auténticos nació con el sueño de ofrecer comida que no solo alimente sino que haga vivir momentos inolvidables, cada receta mantiene la esencia de la cocina tradicional con ingredientes frescos y un toque único, convirtiendo al restaurante en un lugar donde los sabores auténticos crean recuerdos que perduran.”</p>
-        <p>Contamos con un equipo apasionado por la gastronomía que trabaja cada día para ofrecer lo mejor a nuestros clientes.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© 2025 Sabores Autenticos,Momentos Inolvidables</p>
-  </footer>
 </body>
 </html>
