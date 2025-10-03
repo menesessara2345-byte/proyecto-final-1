@@ -1,49 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sabores Autenticos,Momentos Inolvidables — Menú</title>
-  <link rel="stylesheet" href="css/menu.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú</title>
+  <style>
+    /* Fondo general */
+    body {
+        margin: 0;
+        font-family: "Times New Roman", serif;
+        background-color: #ffffff;
+        color: #000;
+    }
+
+    /* Encabezado MENU */
+    header {
+        background-color: #735856; /* Marrón vino */
+        text-align: center;
+        padding: 40px 0;
+    }
+
+    header h1 {
+        color: #fff;
+        font-size: 48px;
+        font-style: italic;
+        margin: 0;
+    }
+
+    /* Sección de Entradas */
+    .section-title {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .section-title h2 {
+        display: inline-block;
+        background-color: #d6cf7f; /* Verde mostaza */
+        padding: 10px 30px;
+        border-radius: 5px;
+        font-style: italic;
+        font-size: 28px;
+        color: #000;
+    }
+
+    /* Contenedor de productos */
+    .menu-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 40px;
+    }
+
+    /* Estilo para cada item */
+    .menu-item {
+        width: 40%;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .menu-item img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="logo">Sabores Autenticos,Momentos Inolvidables</h1>
-    <nav class="main-nav">
-      <a href="index.html">Inicio</a>
-      <a href="menu.html" class="active">Menú</a>
-      <a href="reservas.html">Reservas</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>menu</h1>
   </header>
 
-  <main class="container">
-    <h2>Nuestro Menú</h2>
-    <p>Descubre los sabores que tenemos para ti.</p>
+  <!-- Sección de entradas -->
+  <section class="section-title">
+    <h2>entradas</h2>
+  </section>
 
-    <section class="menu-grid">
-      <div class="menu-item">
-        <img src="https://comidasparaguayas.com/assets/images/empanada-de-carne_800x534.webp" width="300" height="200">
-        <p>Deliciosas opciones para abrir el apetito.</p>
-      </div>
+  <!-- Contenedor de los platos -->
+  <section class="menu-container">
+    
+    <!-- Bruschetta -->
+    <div class="menu-item">
+      <p>-bruschetta $12.000:<br>
+      pan tostado, tomate, albahaca, aceite de oliva</p>
+      <img src="https://www.recetasnestle.com.co/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/6a422ad8de7850c47f89b6012fca69c1.webp?itok=nZ2b5PrJ" alt="Bruschetta">
+    </div>
 
-      <div class="menu-item">
-        <img src="https://media.istockphoto.com/id/1217760999/es/foto/pechugas-de-pollo-a-la-parrilla-con-tomillo-rodajas-de-ajo-y-lim%C3%B3n-en-una-sart%C3%A9n-de-cerca.jpg?s=612x612&w=0&k=20&c=uZKswHiwPV_a2XjtZsbPtGDUpYc3t9i46ZKORuNbA_k=" width="300" height="200">
-        <h3>Plato Fuerte</h3>
-        <p>Recetas tradicionales y modernas con ingredientes de calidad.</p>
-      </div>
+    <!-- Empanadas -->
+    <div class="menu-item">
+      <p>-empanadas caseras $10.000:<br>
+      rellenas de carne o pollo, salsa de la casa</p>
+      <img src="https://www.cocinacaserayfacil.net/wp-content/uploads/2018/04/Empanadas-de-carne-picada.jpg" alt="Empanadas">
+    </div>
 
-      <div class="menu-item">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1OSee6TinjTMbDzXfSdsciCwgux5pmEW4cQ&s" width="300" height="200">
-        <h3>Postres</h3>
-        <p>El toque dulce para cerrar tu experiencia.</p>
-      </div>
-    </section>
-  </main>
+  </section>
 
-  <footer class="site-footer">
-    <p>© 2025 Sabores Autenticos,Momentos Inolvidables</p>
-  </footer>
 </body>
 </html>
