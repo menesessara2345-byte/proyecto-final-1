@@ -1,46 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sabores Autenticos,Momentos Inolvidables — Reservas</title>
-  <link rel="stylesheet" href="css/reservas.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva</title>
+  <style>
+    /* Estilo general */
+    body {
+      margin: 0;
+      font-family: "Georgia", serif;
+      background: #fff;
+      color: #000;
+      text-align: center;
+    }
+
+    /* Encabezado */
+    .header {
+      background: #7b5c5c;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-style: italic;
+    }
+
+    /* Sección de reserva */
+    .reserva {
+      padding: 30px;
+    }
+
+    .instrucciones {
+      background: #e6e394;
+      display: inline-block;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      font-size: 1.1em;
+    }
+
+    /* Formulario */
+    .form-reserva {
+      max-width: 500px;
+      margin: 0 auto;
+      text-align: left;
+      font-size: 1.1em;
+    }
+
+    .form-reserva label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    .form-reserva input,
+    .form-reserva textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .form-reserva textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    /* Botón */
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #7b5c5c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+
+    .btn:hover {
+      background: #5c4343;
+    }
+
+    /* Mensaje */
+    .mensaje {
+      background: #e6e394;
+      margin-top: 30px;
+      padding: 15px;
+      display: inline-block;
+      font-size: 1.2em;
+      font-style: italic;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <h1 class="logo">Sabores del Valle</h1>
-    <nav class="main-nav">
-      <a href="index.html">Inicio</a>
-      <a href="menu.html">Menú</a>
-      <a href="reservas.html" class="active">Reservas</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+  <header class="header">
+    <h1>Reserva</h1>
   </header>
 
-  <main class="container">
-    <h2>Haz tu Reserva</h2>
-    <p>Completa el formulario y asegura tu mesa con nosotros.</p>
+  <section class="reserva">
+    <div class="instrucciones">
+      <p>reserva tu mesa, con los siguientes pasos:</p>
+    </div>
 
-    <form class="reserva-form">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" required>
+    <form class="form-reserva">
+      <label>Nombre completo <span>👤</span></label>
+      <input type="text" placeholder="Escribe tu nombre" required>
 
-      <label for="personas">Número de personas:</label>
-      <input type="number" id="personas" name="personas" min="1" max="20" required>
+      <label>Teléfono <span>📞</span></label>
+      <input type="tel" placeholder="Ej: 3200000000" required>
 
-      <label for="fecha">Fecha:</label>
-      <input type="date" id="fecha" name="fecha" required>
+      <label>Email <span>✉️</span></label>
+      <input type="email" placeholder="ejemplo@email.com" required>
 
-      <label for="hora">Hora:</label>
-      <input type="time" id="hora" name="hora" required>
+      <label>Fecha <span>📅</span></label>
+      <input type="date" required>
+
+      <label>Hora <span>⏰</span></label>
+      <input type="time" required>
+
+      <label>Número de personas <span>➕ ➖</span></label>
+      <input type="number" min="1" max="20" value="2">
+
+      <label>Comentarios <span>💬</span></label>
+      <textarea placeholder="Escribe un comentario..."></textarea>
 
       <button type="submit" class="btn">Reservar</button>
     </form>
-  </main>
 
-  <footer class="site-footer">
-    <p>© 2025 Sabores Autenticos,Momentos Inolvidables</p>
-  </footer>
+    <div class="mensaje">
+      <p>“Elige el día y la hora, nosotros hacemos el resto”.</p>
+    </div>
+  </section>
 </body>
 </html>
