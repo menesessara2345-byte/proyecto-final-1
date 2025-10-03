@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platos Fuertes</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #000;
+    }
+
+    /* Encabezado */
+    .header {
+      background: #7a5c5c;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 48px;
+      font-family: "Brush Script MT", cursive;
+    }
+
+    /* Contenedor principal */
+    .menu {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .plato {
+      width: 45%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .plato h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .plato p {
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .plato img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .plato {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">platos fuertes</div>
+
+  <div class="menu">
+    <div class="plato">
+      <h3>-filete a la plancha $28.000:</h3>
+      <p>con guarnición y salsa de la casa</p>
+      <img src="https://cdn.pixabay.com/photo/2017/09/18/16/56/chicken-2767747_1280.jpg" alt="Filete a la plancha">
+    </div>
+
+    <div class="plato">
+      <h3>-pasta alfredo $22.000:</h3>
+      <p>pasta, salsa cremosa, parmesano</p>
+      <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pasta-2291908_1280.jpg" alt="Pasta Alfredo">
+    </div>
+  </div>
+</body>
+</html>
