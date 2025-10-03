@@ -6,78 +6,74 @@
   <title>Platos Fuertes</title>
   <style>
     body {
-      font-family: 'Georgia', serif;
+      font-family: "Georgia", serif;
       margin: 0;
       padding: 0;
-      background: #fff;
-      color: #000;
+      background-color: #ffffff;
+      color: #000000;
     }
 
-    /* Encabezado */
-    .header {
-      background: #7a5c5c;
-      color: white;
+    header {
+      background-color: #6f5655;
       text-align: center;
-      padding: 20px;
-      font-size: 48px;
-      font-family: "Brush Script MT", cursive;
+      padding: 30px 10px;
     }
 
-    /* Contenedor principal */
+    header h1 {
+      font-size: 48px;
+      font-style: italic;
+      color: white;
+      margin: 0;
+    }
+
     .menu {
       display: flex;
       justify-content: space-around;
+      align-items: flex-start;
       padding: 40px 20px;
+      gap: 40px;
       flex-wrap: wrap;
     }
 
     .plato {
-      width: 45%;
+      width: 300px;
       text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .plato h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .plato p {
-      font-size: 18px;
-      margin-bottom: 15px;
     }
 
     .plato img {
       width: 100%;
-      max-width: 350px;
-      height: auto;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-top: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .plato {
-        width: 100%;
-      }
+    .plato p {
+      font-size: 18px;
+      margin: 10px 0;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
-  <div class="header">platos fuertes</div>
 
-  <div class="menu">
+  <header>
+    <h1>platos fuertes</h1>
+  </header>
+
+  <section class="menu">
     <div class="plato">
-      <h3>-filete a la plancha $28.000:</h3>
-      <p>con guarnición y salsa de la casa</p>
-      <img src="https://cdn.pixabay.com/photo/2017/09/18/16/56/chicken-2767747_1280.jpg" alt="Filete a la plancha">
+      <p>-filete a la plancha $28.000:<br>
+      con guarnición y salsa de la casa</p>
+      <img src="https://www.simplyrecipes.com/thmb/du6PlFcA2N4AUVikU5grlfsqfwM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Grilled-Chicken-LEAD-08-f044982a0a3c45f6b3ee93ce8ffaff21.jpg" alt="Filete a la plancha">
     </div>
 
     <div class="plato">
-      <h3>-pasta alfredo $22.000:</h3>
-      <p>pasta, salsa cremosa, parmesano</p>
-      <img src="https://cdn.pixabay.com/photo/2017/05/07/08/56/pasta-2291908_1280.jpg" alt="Pasta Alfredo">
+      <p>-pasta alfredo $22.000:<br>
+      pasta, salsa cremosa, parmesano</p>
+      <img src="https://www.simplyrecipes.com/thmb/7pSNPfvL9E91bAeXPMTzG45YBYU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Fettuccine-Alfredo-LEAD-07-fb6b65f3ff8546679b6e805da82ad7b0.jpg" alt="Pasta Alfredo">
     </div>
-  </div>
+  </section>
+
 </body>
 </html>
+
